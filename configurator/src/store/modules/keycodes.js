@@ -773,7 +773,7 @@ const state = {
     { name: 'Vol +', code: 'KC_VOLU', title: 'KC_VOLU - Volume Up' },
     { name: 'Media Stop', code: 'KC_MSTP', title: 'KC_MSTP - Media Stop' },
     { name: 'Play', code: 'KC_MPLY', title: 'KC_MPLY - Play/Pause' },
-    { name: 'Sleep', code: 'KC_SLEP', title: 'KC_SLEP - System Sleep' }
+    { name: 'Sleep', code: 'KC_SLEP', title: 'KC_SLEP - System Sleep' },
 
     { label: 'Multimedia Keys (macOS)', width: 'label' },
 
