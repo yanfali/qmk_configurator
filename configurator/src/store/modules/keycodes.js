@@ -148,7 +148,7 @@ const state = {
     { name: '_', code: 'KC_UNDS', keys: '_', title: 'KC_UNDS' },
     { name: '+', code: 'KC_PLUS', keys: '+', title: 'KC_PLUS' },
     { name: '{', code: 'KC_LCBR', keys: '{', title: 'KC_LCBR' },
-    { name: '}', code: 'KC_RCBR', keys: ', title: 'KC_RCBR' }' },
+    { name: '}', code: 'KC_RCBR', keys: '}', title: 'KC_RCBR' },
     { name: '<', code: 'KC_LT', keys: '<', title: 'KC_LT' },
     { name: '>', code: 'KC_GT', keys: '>', title: 'KC_GT' },
     { name: ':', code: 'KC_COLN', keys: ':', title: 'KC_COLN' },
