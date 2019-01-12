@@ -115,7 +115,7 @@ const state = {
     { name: '=', code: 'KC_PEQL', title: 'KC_PEQL' },
     { width: 0 },
 
-    { name: 'Left Ctrl', code: 'KC_LCTL', keys: 'ctrl', title: 'KC_LCTL' width: 1250 },
+    { name: 'Left Ctrl', code: 'KC_LCTL', keys: 'ctrl', title: 'KC_LCTL', width: 1250 },
     { name: 'Left OS', code: 'KC_LGUI', keys: 'cmd', title: 'KC_LGUI', width: 1250 },
     { name: 'Left Alt', code: 'KC_LALT', keys: 'alt', title: 'KC_LALT', width: 1250 },
     { name: 'Space', code: 'KC_SPC', keys: 'space', title: 'KC_SPC', width: 6250 },
@@ -304,7 +304,7 @@ const state = {
     { name: 'Down', code: 'KC_DOWN', keys: 'down', title: 'KC_DOWN' },
     { name: 'Right', code: 'KC_RGHT', keys: 'right', title: 'KC_RGHT' },
     { width: 250 },
-    { name: '0', code: 'KC_P0', keys: 'num_0', title: 'KC_P0' width: 2000 },
+    { name: '0', code: 'KC_P0', keys: 'num_0', title: 'KC_P0', width: 2000 },
     { name: '.', code: 'KC_PDOT', keys: 'num_decimal', title: 'KC_PDOT' },
     { name: 'Enter', code: 'KC_PENT', keys: 'num_enter', title: 'KC_PENT' },
 
