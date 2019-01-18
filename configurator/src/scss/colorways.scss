@@ -1,3 +1,5 @@
+// Signature Plastics keysets
+
 .danger-zone-key {
   background: $color-sp-abs-BFU;
   color: $color-sp-abs-YY;
@@ -7,6 +9,17 @@
   color: $color-sp-abs-YY;
 }
 .danger-zone-kb {
+}
+
+.carbon-key {
+  background: $color-sp-abs-WBO;
+  color: $color-sp-abs-GQM;
+}
+.carbon-mod {
+  background: $color-sp-abs-GQM;
+  color: $color-sp-abs-OBC;
+}
+.carbon-kb {
 }
 
 .modern-selectric-key {
@@ -20,6 +33,17 @@
 .modern-selectric-kb {
 }
 
+.nantucket-selectric-key {
+  background: $color-sp-abs-WV;
+  color: $color-sp-abs-BBI;
+}
+.nantucket-selectric-mod {
+  background: $color-sp-abs-BBI;
+  color: $color-sp-abs-YCF;
+}
+.nantucket-selectric-kb {
+}
+
 .oblivion-hagoromo-key {
   background: $color-sp-abs-WFK;
   color: $color-sp-abs-GD;
@@ -30,6 +54,8 @@
 }
 .oblivion-hagoromo-kb {
 }
+
+// GMK Keysets
 
 .gmk-merlin-key {
   background: $color-gmk-abs-CP;
@@ -42,13 +68,24 @@
 .gmk-merlin-kb {
 }
 
-.carbon-key {
-  background: $color-sp-abs-WBO;
-  color: $color-sp-abs-GQM;
+.gmk-wob-key {
+  background: $color-gmk-abs-CR;
+  color: $color-gmk-abs-WS1;
 }
-.carbon-mod {
-  background: $color-sp-abs-GQM;
-  color: $color-sp-abs-OBC;
+.gmk-wob-mod {
+  background: $color-gmk-abs-CR;
+  color: $color-gmk-abs-WS1;
 }
-.carbon-kb {
+.gmk-wob-kb {
+}
+
+.gmk-dolch-key {
+  background: $color-gmk-abs-CC;
+  color: $color-gmk-abs-WS1;
+}
+.gmk-dolch-mod {
+  background: $color-gmk-abs-N9;
+  color: $color-gmk-abs-WS1;
+}
+.gmk-dolch-kb {
 }
