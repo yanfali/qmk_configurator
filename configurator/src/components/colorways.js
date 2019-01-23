@@ -1,10 +1,10 @@
 export default {
   list: [
-    { name: 'carbon' },
-    { name: 'danger-zone' },
-    { name: 'drifter' },
+    { name: 'sa-carbon' },
+    { name: 'sa-danger-zone' },
+    { name: 'dsa-drifter' },
     {
-      name: 'jukebox',
+      name: 'sa-jukebox',
       override: {
         KC_ESC: 'accent',
         KC_ENT: 'accent'
@@ -59,9 +59,9 @@ export default {
         KC_UP: 'accent'
       }
     },
-    { name: 'modern-selectric' },
-    { name: 'nantucket-selectric' },
-    { name: 'oblivion-hagoromo' }
+    { name: 'sa-modern-selectric' },
+    { name: 'sa-nantucket-selectric' },
+    { name: 'sa-oblivion-hagoromo' }
   ],
   /*
    * List of codes we should use icons for instead of text
