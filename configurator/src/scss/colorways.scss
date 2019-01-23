@@ -179,6 +179,10 @@
     background: lighten($color-gmk-abs-TU1, 40%);
   }
 }
+.gmk-merlin-accent {
+  background: $color-gmk-abs-N6;
+  color: $color-gmk-abs-TU1;
+}
 .gmk-merlin-kb {
 }
 
@@ -315,6 +319,27 @@
 .gmk-nautilus-kb {
   // placeholder
   background: $color-pantone-533C;
+}
+
+.gmk-serika-key {
+  background: #ece4d0;
+  color: #333732;
+  input {
+    background: lighten(#ece4d0, 40%);
+  }
+}
+.gmk-serika-mod {
+  background: #ffcd00;
+  color: #333732;
+  input {
+    background: lighten(#ffcd00, 40%);
+  }
+}
+.gmk-serika-accent {
+  background: #333732;
+  color: #ece4d0;
+}
+.gmk-serika-kb {
 }
 
 // Keyreative
