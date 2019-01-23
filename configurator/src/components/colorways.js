@@ -7,6 +7,13 @@ export default {
     { name: 'gmk-merlin' },
     { name: 'gmk-olivetti' },
     {
+      name: 'gmk-nautilus',
+      override: {
+        KC_ENT: 'accent',
+        KC_ESC: 'accent'
+      }
+    },
+    {
       name: 'gmk-olivia',
       override: {
         KC_SPC: 'accent',

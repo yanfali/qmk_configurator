@@ -210,6 +210,33 @@
   // placeholder
 }
 
+
+.gmk-nautilus-key {
+  background: $color-pantone-534C;
+  color: $color-gmk-abs-TU2;
+  input {
+    background: lighten($color-pantone-534C, 40%);
+  }
+}
+.gmk-nautilus-mod {
+  background: $color-pantone-533C;
+  color: $color-gmk-abs-N6;
+  input {
+    background: lighten($color-pantone-533C, 40%);
+  }
+}
+.gmk-nautilus-accent {
+  background: $color-gmk-abs-N6;
+  color: $color-pantone-533C;
+  input {
+    background: lighten($color-gmk-abs-N6, 40%);
+  }
+}
+.gmk-nautilus-kb {
+  // placeholder
+  background: $color-pantone-533C;
+}
+
 // Keyreative
 
 .drifter-key {
