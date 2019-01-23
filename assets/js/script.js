@@ -2029,7 +2029,12 @@ $(document).ready(() => {
 
       { name: '無変換', code: 'KC_MHEN', title: 'JIS Muhenkan', width: 1250 },
       { name: '変換', code: 'KC_HENK', title: 'JIS Henkan', width: 1250 },
-      { name: 'かな', code: 'KC_KANA', title: 'JIS Katakana/Hiragana', width: 1250 },
+      {
+        name: 'かな',
+        code: 'KC_KANA',
+        title: 'JIS Katakana/Hiragana',
+        width: 1250
+      },
       { width: 250 },
 
       { name: '漢字', code: 'KC_HANJ', title: 'Korean Hanja' },
@@ -2041,7 +2046,12 @@ $(document).ready(() => {
       { name: '▽', code: 'KC_TRNS', title: 'Pass-through' },
       { name: 'Reset', code: 'RESET', title: 'Reset the keyboard' },
       { name: 'Debug', code: 'DEBUG', title: 'Toggle debug mode' },
-      { name: 'EEPROM Reset', code: 'EEP_RST', title: 'Resets EEPROM state', width: 1250 },
+      {
+        name: 'EEPROM Reset',
+        code: 'EEP_RST',
+        title: 'Resets EEPROM state',
+        width: 1250
+      },
       { width: 1000 },
       {
         name: 'Any',
@@ -2319,48 +2329,171 @@ $(document).ready(() => {
 
       { label: 'Keyboard settings (persistent)', width: 'label' },
 
-      { name: 'Swap LCtl/Caps', code: 'MAGIC_SWAP_CONTROL_CAPSLOCK', title: 'Swap Left Control and Caps Lock', width: 1500 },
-      { name: 'Caps>LCtl', code: 'MAGIC_CAPSLOCK_TO_CONTROL', title: 'Treat Caps Lock as Left Control', width: 1500 },
-      { name: 'Swap LAlt/LGUI', code: 'MAGIC_SWAP_LALT_LGUI', title: 'Swap Left Alt and Left GUI', width: 1500 },
-      { name: 'Swap RAlt/RGUI', code: 'MAGIC_SWAP_RALT_RGUI', title: 'Swap Right Alt and Right GUI', width: 1500 },
-      { name: 'Disable GUI', code: 'MAGIC_NO_GUI', title: 'Disable the GUI keys (useful when gaming)', width: 1500 },
-      { name: 'Swap ` with Esc', code: 'MAGIC_SWAP_GRAVE_ESC', title: 'Swap ` and Escape', width: 1500 },
-      { name: 'Swap \\ with Bksp', code: 'MAGIC_SWAP_BACKSLASH_BACKSPACE', title: 'Swap Backslash and Backspace', width: 1500 },
-      { name: 'NKRO On', code: 'MAGIC_HOST_NKRO', title: 'Force N-Key Rollover (NKRO) on', width: 1500 },
-      { name: 'Swap Alt/GUI', code: 'MAGIC_SWAP_ALT_GUI', title: 'Swap Alt and GUI on both sides (for macOS)', width: 1500 },
+      {
+        name: 'Swap LCtl/Caps',
+        code: 'MAGIC_SWAP_CONTROL_CAPSLOCK',
+        title: 'Swap Left Control and Caps Lock',
+        width: 1500
+      },
+      {
+        name: 'Caps>LCtl',
+        code: 'MAGIC_CAPSLOCK_TO_CONTROL',
+        title: 'Treat Caps Lock as Left Control',
+        width: 1500
+      },
+      {
+        name: 'Swap LAlt/LGUI',
+        code: 'MAGIC_SWAP_LALT_LGUI',
+        title: 'Swap Left Alt and Left GUI',
+        width: 1500
+      },
+      {
+        name: 'Swap RAlt/RGUI',
+        code: 'MAGIC_SWAP_RALT_RGUI',
+        title: 'Swap Right Alt and Right GUI',
+        width: 1500
+      },
+      {
+        name: 'Disable GUI',
+        code: 'MAGIC_NO_GUI',
+        title: 'Disable the GUI keys (useful when gaming)',
+        width: 1500
+      },
+      {
+        name: 'Swap ` with Esc',
+        code: 'MAGIC_SWAP_GRAVE_ESC',
+        title: 'Swap ` and Escape',
+        width: 1500
+      },
+      {
+        name: 'Swap \\ with Bksp',
+        code: 'MAGIC_SWAP_BACKSLASH_BACKSPACE',
+        title: 'Swap Backslash and Backspace',
+        width: 1500
+      },
+      {
+        name: 'NKRO On',
+        code: 'MAGIC_HOST_NKRO',
+        title: 'Force N-Key Rollover (NKRO) on',
+        width: 1500
+      },
+      {
+        name: 'Swap Alt/GUI',
+        code: 'MAGIC_SWAP_ALT_GUI',
+        title: 'Swap Alt and GUI on both sides (for macOS)',
+        width: 1500
+      },
       { width: 0 },
-      { name: 'Rev LCtl/Caps', code: 'MAGIC_UNSWAP_CONTROL_CAPSLOCK', title: 'Unswap Left Control and Caps Lock', width: 1500 },
-      { name: 'Rev Caps>LCtl', code: 'MAGIC_UNCAPSLOCK_TO_CONTROL', title: 'Stop treating Caps Lock as Left Control', width: 1500 },
-      { name: 'Rev LAlt/LGUI', code: 'MAGIC_UNSWAP_LALT_LGUI', title: 'Unswap Left Alt and Left GUI', width: 1500 },
-      { name: 'Rev RAlt/RGUI', code: 'MAGIC_UNSWAP_RALT_RGUI', title: 'Unswap Right Alt and Right GUI', width: 1500 },
-      { name: 'Enable GUI', code: 'MAGIC_UNNO_GUI', title: 'Enable the GUI keys', width: 1500 },
-      { name: 'Rev ` with Esc', code: 'MAGIC_UNSWAP_GRAVE_ESC', title: 'Unswap ` and Escape', width: 1500 },
-      { name: 'Rev \\ with Bksp', code: 'MAGIC_UNSWAP_BACKSLASH_BACKSPACE', title: 'Unswap Backslash and Backspace', width: 1500 },
-      { name: 'NKRO Off', code: 'MAGIC_UNHOST_NKRO', title: 'Force N-Key Rollover (NKRO) off', width: 1500 },
-      { name: 'Rev Alt/GUI', code: 'MAGIC_UNSWAP_ALT_GUI', title: 'Unswap Alt and GUI on both sides (for macOS)', width: 1500 },
-      { name: 'Togg NKRO', code: 'MAGIC_TOGGLE_NKRO', title: 'Turn NKRO on or off', width: 1500 },
+      {
+        name: 'Rev LCtl/Caps',
+        code: 'MAGIC_UNSWAP_CONTROL_CAPSLOCK',
+        title: 'Unswap Left Control and Caps Lock',
+        width: 1500
+      },
+      {
+        name: 'Rev Caps>LCtl',
+        code: 'MAGIC_UNCAPSLOCK_TO_CONTROL',
+        title: 'Stop treating Caps Lock as Left Control',
+        width: 1500
+      },
+      {
+        name: 'Rev LAlt/LGUI',
+        code: 'MAGIC_UNSWAP_LALT_LGUI',
+        title: 'Unswap Left Alt and Left GUI',
+        width: 1500
+      },
+      {
+        name: 'Rev RAlt/RGUI',
+        code: 'MAGIC_UNSWAP_RALT_RGUI',
+        title: 'Unswap Right Alt and Right GUI',
+        width: 1500
+      },
+      {
+        name: 'Enable GUI',
+        code: 'MAGIC_UNNO_GUI',
+        title: 'Enable the GUI keys',
+        width: 1500
+      },
+      {
+        name: 'Rev ` with Esc',
+        code: 'MAGIC_UNSWAP_GRAVE_ESC',
+        title: 'Unswap ` and Escape',
+        width: 1500
+      },
+      {
+        name: 'Rev \\ with Bksp',
+        code: 'MAGIC_UNSWAP_BACKSLASH_BACKSPACE',
+        title: 'Unswap Backslash and Backspace',
+        width: 1500
+      },
+      {
+        name: 'NKRO Off',
+        code: 'MAGIC_UNHOST_NKRO',
+        title: 'Force N-Key Rollover (NKRO) off',
+        width: 1500
+      },
+      {
+        name: 'Rev Alt/GUI',
+        code: 'MAGIC_UNSWAP_ALT_GUI',
+        title: 'Unswap Alt and GUI on both sides (for macOS)',
+        width: 1500
+      },
+      {
+        name: 'Togg NKRO',
+        code: 'MAGIC_TOGGLE_NKRO',
+        title: 'Turn NKRO on or off',
+        width: 1500
+      },
 
       { label: 'Backlight settings', width: 'label' },
 
-      { name: 'BL Toggle', code: 'BL_TOGG', title: 'Turn the backlight on or off' },
-      { name: 'BL Cycle', code: 'BL_STEP', title: 'Cycle through backlight levels' },
-      { name: 'BL On', code: 'BL_ON', title: 'Set the backlight to max brightness' },
+      {
+        name: 'BL Toggle',
+        code: 'BL_TOGG',
+        title: 'Turn the backlight on or off'
+      },
+      {
+        name: 'BL Cycle',
+        code: 'BL_STEP',
+        title: 'Cycle through backlight levels'
+      },
+      {
+        name: 'BL On',
+        code: 'BL_ON',
+        title: 'Set the backlight to max brightness'
+      },
       { name: 'BL Off', code: 'BL_OFF', title: 'Turn the backlight off' },
-      { name: 'BL +', code: 'BL_INC', title:'Increase the backlight level' },
-      { name: 'BL -', code: 'BL_DEC', title:'Decrease the backlight level' },
-      { name: 'BL Breath', code: 'BL_BRTG', title: 'Toggle backlight breathing' },
+      { name: 'BL +', code: 'BL_INC', title: 'Increase the backlight level' },
+      { name: 'BL -', code: 'BL_DEC', title: 'Decrease the backlight level' },
+      {
+        name: 'BL Breath',
+        code: 'BL_BRTG',
+        title: 'Toggle backlight breathing'
+      },
 
       { label: 'RGB Lighting settings', width: 'label' },
 
-      { name: 'RGB Toggle', code: 'RGB_TOG', title: 'Toggle RGB lighting on or off' },
+      {
+        name: 'RGB Toggle',
+        code: 'RGB_TOG',
+        title: 'Toggle RGB lighting on or off'
+      },
       { name: 'RGB Mode +', code: 'RGB_MOD', title: 'Next mode' },
       { name: 'RGB Mode -', code: 'RGB_RMOD', title: 'Previous mode' },
       { name: 'Hue +', code: 'RGB_HUI', title: 'Increase hue' },
       { name: 'Hue -', code: 'RGB_HUD', title: 'Decrease hue' },
       { name: 'Sat +', code: 'RGB_SAI', title: 'Increase saturation' },
       { name: 'Sat -', code: 'RGB_SAD', title: 'Decrease saturation' },
-      { name: 'Bright +', code: 'RGB_VAI', title: 'Increase value (brightness)' },
-      { name: 'Bright -', code: 'RGB_VAD', title: 'Decrease value (brightness)' },
+      {
+        name: 'Bright +',
+        code: 'RGB_VAI',
+        title: 'Increase value (brightness)'
+      },
+      {
+        name: 'Bright -',
+        code: 'RGB_VAD',
+        title: 'Decrease value (brightness)'
+      },
       { name: 'Effect +', code: 'RGB_SPI', title: 'Increase effect speed' },
       { name: 'Effect -', code: 'RGB_SPD', title: 'Decrease effect speed' },
       { name: 'RGB Mode P', code: 'RGB_M_P', title: 'Plain' },
@@ -2374,7 +2507,11 @@ $(document).ready(() => {
 
       { label: 'Multimedia Keys', width: 'label' },
 
-      { name: 'Prev Track', code: 'KC_MPRV', title: 'Previous Track (Windows)' },
+      {
+        name: 'Prev Track',
+        code: 'KC_MPRV',
+        title: 'Previous Track (Windows)'
+      },
       { name: 'Next Track', code: 'KC_MNXT', title: 'Next Track (Windows)' },
       { name: 'Mute', code: 'KC_MUTE', title: 'Mute Audio' },
       { name: 'Vol -', code: 'KC_VOLD', title: 'Volume Down' },
@@ -2390,7 +2527,7 @@ $(document).ready(() => {
       { name: 'Vol -', code: 'KC__VOLDOWN', title: 'Volume Down (macOS)' },
       { name: 'Vol +', code: 'KC__VOLUP', title: 'Volume Up (macOS)' },
       { width: 250 },
-      { name: 'Eject', code: 'KC_EJCT', title: 'Eject (macOS)'},
+      { name: 'Eject', code: 'KC_EJCT', title: 'Eject (macOS)' },
 
       { label: 'Mouse Keys', width: 'label' },
 
@@ -2408,11 +2545,27 @@ $(document).ready(() => {
       { name: 'Mouse Wheel Up', code: 'KC_WH_U', title: 'Mouse Wheel Up' },
       { name: 'Mouse Wheel Down', code: 'KC_WH_D', title: 'Mouse Wheel Down' },
       { name: 'Mouse Wheel Left', code: 'KC_WH_L', title: 'Mouse Wheel Left' },
-      { name: 'Mouse Wheel Right', code: 'KC_WH_R', title: 'Mouse Wheel Right' },
+      {
+        name: 'Mouse Wheel Right',
+        code: 'KC_WH_R',
+        title: 'Mouse Wheel Right'
+      },
       { width: 250 },
-      { name: 'Mouse Accel 0', code: 'KC_ACL0', title: 'Set mouse acceleration to 0' },
-      { name: 'Mouse Accel 1', code: 'KC_ACL1', title: 'Set mouse acceleration to 1' },
-      { name: 'Mouse Accel 2', code: 'KC_ACL2', title: 'Set mouse acceleration to 2' }
+      {
+        name: 'Mouse Accel 0',
+        code: 'KC_ACL0',
+        title: 'Set mouse acceleration to 0'
+      },
+      {
+        name: 'Mouse Accel 1',
+        code: 'KC_ACL1',
+        title: 'Set mouse acceleration to 1'
+      },
+      {
+        name: 'Mouse Accel 2',
+        code: 'KC_ACL2',
+        title: 'Set mouse acceleration to 2'
+      }
     ];
   }
 
