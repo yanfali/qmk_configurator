@@ -61,8 +61,9 @@ export default {
       }
     },
     { name: 'gmk-ta-royal-alpha' },
-    { name: 'gmk-wob' },
-    { name: 'dsa-drifter' }
+    { name: 'gmk-wob' }
+    //,
+    //{ name: 'dsa-drifter' }
   ],
   /*
    * List of codes we should use icons for instead of text
