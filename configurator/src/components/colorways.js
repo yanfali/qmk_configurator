@@ -2,7 +2,6 @@ export default {
   list: [
     { name: 'sa-carbon' },
     { name: 'sa-danger-zone' },
-    { name: 'dsa-drifter' },
     {
       name: 'sa-jukebox',
       override: {
@@ -10,9 +9,29 @@ export default {
         KC_ENT: 'accent'
       }
     },
+    { name: 'sa-modern-selectric' },
+    { name: 'sa-nantucket-selectric' },
+    { name: 'sa-oblivion-hagoromo' },
+
     { name: 'gmk-dolch' },
     { name: 'gmk-merlin' },
-    { name: 'gmk-olivetti' },
+    {
+      name: 'gmk-metaverse',
+      override: {
+        KC_ESC: 'accent',
+        KC_ENT: 'accent',
+        KC_F5: 'accent',
+        KC_F6: 'accent',
+        KC_F7: 'accent',
+        KC_F8: 'accent',
+        KC_LGUI: 'accent',
+        KC_RGUI: 'accent',
+        KC_LEFT: 'accent',
+        KC_RGHT: 'accent',
+        KC_DOWN: 'accent',
+        KC_UP: 'accent'
+      }
+    },
     {
       name: 'gmk-nautilus',
       override: {
@@ -20,6 +39,7 @@ export default {
         KC_ESC: 'accent'
       }
     },
+    { name: 'gmk-olivetti' },
     {
       name: 'gmk-olivia',
       override: {
@@ -42,26 +62,7 @@ export default {
     },
     { name: 'gmk-ta-royal-alpha' },
     { name: 'gmk-wob' },
-    {
-      name: 'gmk-metaverse',
-      override: {
-        KC_ESC: 'accent',
-        KC_ENT: 'accent',
-        KC_F5: 'accent',
-        KC_F6: 'accent',
-        KC_F7: 'accent',
-        KC_F8: 'accent',
-        KC_LGUI: 'accent',
-        KC_RGUI: 'accent',
-        KC_LEFT: 'accent',
-        KC_RGHT: 'accent',
-        KC_DOWN: 'accent',
-        KC_UP: 'accent'
-      }
-    },
-    { name: 'sa-modern-selectric' },
-    { name: 'sa-nantucket-selectric' },
-    { name: 'sa-oblivion-hagoromo' }
+    { name: 'dsa-drifter' }
   ],
   /*
    * List of codes we should use icons for instead of text
