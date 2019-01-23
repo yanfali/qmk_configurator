@@ -3,6 +3,13 @@ export default {
     { name: 'carbon' },
     { name: 'danger-zone' },
     { name: 'drifter' },
+    {
+      name: 'jukebox',
+      override: {
+        KC_ESC: 'accent',
+        KC_ENT: 'accent'
+      }
+    },
     { name: 'gmk-dolch' },
     { name: 'gmk-merlin' },
     { name: 'gmk-olivetti' },

@@ -83,6 +83,33 @@
 .oblivion-hagoromo-kb {
 }
 
+
+.jukebox-key {
+  background: $color-sp-abs-TM;
+  color: $color-sp-abs-RN;
+  input {
+    background: lighten($color-sp-abs-TM, 40%);
+    color: $color-sp-abs-RN;
+  }
+}
+.jukebox-mod {
+  background: $color-sp-abs-VCO;
+  color: $color-sp-abs-RN;
+  input {
+    background: lighten($color-sp-abs-VCO, 40%);
+  }
+}
+.jukebox-accent {
+  background: $color-sp-abs-RN;
+  color: $color-sp-abs-TM;
+  input {
+    background: lighten($color-sp-abs-RN, 40%);
+  }
+}
+.jukebox-kb {
+}
+
+
 // GMK Keysets
 
 .gmk-merlin-key {
