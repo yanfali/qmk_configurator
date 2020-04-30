@@ -1,4 +1,5 @@
 <script>
+import memoize from 'lodash/memoize';
 export default {
   name: 'base-keymap',
   methods: {
@@ -25,11 +26,12 @@ export default {
     },
     calculateMax(layout) {
       const layoutArray = this.layouts[layout];
+      const ckd = memoize(this.calcKeyKeymapDims);
       const max = layoutArray.reduce(
         (acc, pos) => {
           let _pos = Object.assign({ w: 1, h: 1 }, pos);
           const coor = this.calcKeyKeymapPos(_pos.x, _pos.y);
-          const dims = this.calcKeyKeymapDims(_pos.w, _pos.h);
+          const dims = ckd(_pos.w, _pos.h);
           acc.x = Math.max(acc.x, coor.x + dims.w);
           acc.y = Math.max(acc.y, coor.y + dims.h);
           return acc;

@@ -13,6 +13,7 @@
 </template>
 <script>
 import isUndefined from 'lodash/isUndefined';
+import memoize from 'lodash/memoize';
 import { mapState, mapGetters, mapMutations } from 'vuex';
 import BaseKeymap from '@/components/BaseKeymap';
 import BaseKey from '@/components/BaseKey';
@@ -83,10 +84,11 @@ export default {
       // eslint-disable-next-line no-console
       this.profile && console.time('currentLayer');
       const colorway = this.colorway;
+      const ckd = memoize(this.calcKeyKeymapDims);
       let curLayer = layout.map((pos, index) => {
         let _pos = Object.assign({ w: 1, h: 1 }, pos);
         const coor = this.calcKeyKeymapPos(_pos.x, _pos.y);
-        const dims = this.calcKeyKeymapDims(_pos.w, _pos.h);
+        const dims = ckd(_pos.w, _pos.h);
         return Object.assign(
           {
             id: index,
@@ -210,5 +212,9 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+.key-dimensions {
+  height: var(--key-height);
+  width: var(--key-width);
 }
 </style>

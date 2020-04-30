@@ -144,19 +144,10 @@ export default {
       if (this.h > 0) {
         styles.push(`height: ${this.h}px;`);
       }
-      if (this.y > 0) {
-        styles.push(`top: ${this.y}px;`);
-      }
-      if (this.x > 0) {
-        styles.push(`left: ${this.x}px;`);
-      }
-      if (this.meta && this.meta.name.length >= 2) {
-        let keySize = 0.61;
-        if (this.config.SCALE < 1) {
-          keySize *= (1 + this.config.SCALE) / 2;
-        }
-        styles.push(`font-size: ${keySize}rem;`);
-      }
+
+      const x = this.x;
+      const y = this.y;
+      styles.push(`transform: translate(${x}px,${y}px)`);
       return styles.join('');
     }
   },
@@ -262,7 +253,7 @@ export default {
   transform: scale(0.8);
 }
 .key.smaller {
-  font-size: 0.61rem;
+  font-size: var(--key-smaller-label-fontsize);
 }
 .key {
   border-radius: 6px;
