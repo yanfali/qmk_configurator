@@ -437,19 +437,21 @@ export default {
   border-radius: 6px 6px 0px 6px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 0px 2px inset,
     rgba(0, 0, 0, 0.3) 0px 0px 0px 1px;
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
 }
 .kiso::after {
   background: inherit;
   position: absolute;
   content: '';
-  right: -1px;
+  right: -2px;
   top: var(--default-key-height);
-  height: var(--default-key-x-spacing);
-  width: calc(1.25 * var(--default-key-width));
+  height: calc(var(--default-key-x-spacing) + 1px);
+  width: calc(1.2 * var(--default-key-width));
   border-radius: 0px 0px 6px 6px;
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  border-right: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px 2px inset,
-    rgba(0, 0, 0, 0.3) 0px 2px 0px 1px;
+    rgba(0, 0, 0, 0.3) -1px 1px 0px 0px, rgba(0, 0, 0, 0.3) 2px 0px 0px -1px;
 }
 </style>
